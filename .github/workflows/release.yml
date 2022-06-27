@@ -1,0 +1,35 @@
+name: Manage Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  manage-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update Release PR.
+        uses: GoogleCloudPlatform/release-please-action@v2
+        id: release-pr
+        with:
+          release-type: ruby
+          package-name: noko_cli
+          version-file: "lib/noko_cli/version.rb"
+      - name: Checkout
+        uses: actions/checkout@v2
+        if: ${{ steps.release-pr.outputs.release_created }}
+      - name: Set Up Ruby
+        uses: ruby/setup-ruby@v1
+        if: ${{ steps.release-pr.outputs.release_created }}
+        with:
+          ruby-version: 2.6.5
+      - name: Bundle Install
+        run: bundle install
+        if: ${{ steps.release-pr.outputs.release_created }}
+      - name: Build and Publish Gem
+        uses: jstastny/publish-gem-to-github@master
+        if: ${{ steps.release-pr.outputs.release_created }}
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          owner: juanvqz
