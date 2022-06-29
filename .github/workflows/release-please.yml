@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Update Release PR.
         uses: google-github-actions/release-please-action@v3
+        id: release_pr
         with:
           release-type: ruby
           package-name: noko_cli
@@ -16,18 +17,18 @@ jobs:
           changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false}]'
       - name: Checkout
         uses: actions/checkout@v2
-        if: ${{ steps.release-pr.outputs.release_created }}
+        if: ${{ steps.release_pr.outputs.release_created }}
       - name: Set Up Ruby
         uses: ruby/setup-ruby@v1
-        if: ${{ steps.release-pr.outputs.release_created }}
+        if: ${{ steps.release_pr.outputs.release_created }}
         with:
-          ruby-version: 2.6.5
+          ruby-version: 2.6.6
       - name: Bundle Install
         run: bundle install
-        if: ${{ steps.release-pr.outputs.release_created }}
+        if: ${{ steps.release_pr.outputs.release_created }}
       - name: Build and Publish Gem
         uses: jstastny/publish-gem-to-github@master
-        if: ${{ steps.release-pr.outputs.release_created }}
+        if: ${{ steps.release_pr.outputs.release_created }}
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           owner: juanvqz

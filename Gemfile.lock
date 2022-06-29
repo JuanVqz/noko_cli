@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    noko_cli (0.1.0)
+    noko_cli (1.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -49,6 +49,7 @@ GEM
     unicode-display_width (2.1.0)
 
 PLATFORMS
+  ruby
   x86_64-linux
 
 DEPENDENCIES
