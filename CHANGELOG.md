@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [1.0.3](https://github.com/JuanVqz/noko_cli/compare/v1.0.2...v1.0.3) (2022-06-29)
+
+
+### Miscellaneous
+
+* **release:** Change TOKEN in RubyGems to allow publish ([671005a](https://github.com/JuanVqz/noko_cli/commit/671005ad7725a33aef8af64ba2528a4480c47d77)), closes [#4](https://github.com/JuanVqz/noko_cli/issues/4)
+
 ## [1.0.2](https://github.com/JuanVqz/noko_cli/compare/v1.0.1...v1.0.2) (2022-06-29)
 
 
