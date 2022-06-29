@@ -1,5 +1,13 @@
 ## [Unreleased]
 
+## [1.0.2](https://github.com/JuanVqz/noko_cli/compare/v1.0.1...v1.0.2) (2022-06-29)
+
+
+### Miscellaneous
+
+* **automatic-release:** Fix order of releases ([e369166](https://github.com/JuanVqz/noko_cli/commit/e3691662a864e57cfab63e7c94b12f6298ac8598)), closes [#4](https://github.com/JuanVqz/noko_cli/issues/4)
+* **release:** Add the ability to publish in RubyGems ([#13](https://github.com/JuanVqz/noko_cli/issues/13)) ([0a3c68e](https://github.com/JuanVqz/noko_cli/commit/0a3c68ef5738ea94f451e14b538d648895f53277)), closes [#4](https://github.com/JuanVqz/noko_cli/issues/4)
+
 ## [1.0.1](https://github.com/JuanVqz/noko_cli/compare/v1.0.0...v1.0.1) (2022-06-29)
 
 
