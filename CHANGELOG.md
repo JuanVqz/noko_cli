@@ -1,5 +1,13 @@
 ## [Unreleased]
 
+## [1.0.4](https://github.com/JuanVqz/noko_cli/compare/v1.0.3...v1.0.4) (2022-07-02)
+
+
+### Miscellaneous
+
+* **cli:** Add exe folder ([#19](https://github.com/JuanVqz/noko_cli/issues/19)) ([e10d7ec](https://github.com/JuanVqz/noko_cli/commit/e10d7ec28b490af75e708e3c2d9764eb7f0608c6)), closes [#18](https://github.com/JuanVqz/noko_cli/issues/18)
+* **env:** Add overcommit configuration ([#22](https://github.com/JuanVqz/noko_cli/issues/22)) ([787a803](https://github.com/JuanVqz/noko_cli/commit/787a8034a634911eaf274dada5189b3570fe2ef1)), closes [#20](https://github.com/JuanVqz/noko_cli/issues/20)
+
 ## [1.0.3](https://github.com/JuanVqz/noko_cli/compare/v1.0.2...v1.0.3) (2022-06-29)
 
 
