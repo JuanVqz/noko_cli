@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## 1.0.0 (2022-07-03)
+
+
+### Miscellaneous
+
+* **readme:** Fix build status label ([2f5d572](https://github.com/JuanVqz/noko_cli/commit/2f5d5720b97cbb54d4aeca169c333601b69edb28))
+
 ## [1.0.3](https://github.com/JuanVqz/noko_cli/compare/v1.0.2...v1.0.3) (2022-06-29)
 
 
