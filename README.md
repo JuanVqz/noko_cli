@@ -1,6 +1,6 @@
 # NokoCli
 
-![Test Suite](https://github.com/juanvqz/noko_cli/actions/workflows/main/badge.svg)
+[![Build Status](https://github.com/juanvqz/noko_cli/workflows/main/badge.svg?branch=main)](https://github.com/juanvqz/noko_cli/actions)
 
 
 ## Development
