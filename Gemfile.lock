@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    noko_cli (0.1.0)
+    noko_cli (0.1.1)
 
 GEM
   remote: https://rubygems.org/
