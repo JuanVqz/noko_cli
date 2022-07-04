@@ -1,0 +1,10 @@
+AllCops:
+  NewCops: enable
+
+require:
+  - rubocop-performance
+  - rubocop-rake
+  - rubocop-rspec
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
