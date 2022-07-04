@@ -27,8 +27,15 @@ PreCommit:
     enabled: true
   RuboCop:
     enabled: true
-    command: ["rake", "standard"]
+    command: ["bundle", "exec", "rubocop"]
 
 PrePush:
   RSpec:
+    enabled: true
+
+PostCheckout:
+  ALL:
+    quiet: true
+
+  IndexTags:
     enabled: true
