@@ -10,11 +10,11 @@ RSpec.describe NokoCli::Entries do
     end
     let(:entries) { described_class.new(adapter: :test, stubs: stubs) }
 
-    it "returns an array of entries" do
+    xit "returns an array of entries" do
       expect(entries.list).to be_instance_of Array
     end
 
-    it "includes one entry" do
+    xit "includes one entry" do
       expect(entries.list.count).to eq 1
     end
   end

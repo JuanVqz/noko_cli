@@ -33,6 +33,7 @@ Gem::Specification.new do |spec|
   spec.metadata = { "rubygems_mfa_required" => "true" }
 
   spec.add_dependency "faraday", "~> 2.3.0"
+  spec.add_dependency "tty-table", "~> 0.12.0"
 
   spec.add_development_dependency "pry", "~> 0.14.1"
 

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "faraday"
+require "tty-table"
 
 module NokoCli
   # This is an entry resource, which could be listed
@@ -14,8 +15,10 @@ module NokoCli
     end
 
     def list
-      conn.get("current_user/entries").body
+      puts TTY::Table.new(headers, rows).render(:ascii, resize: true)
     end
+
+    private
 
     def conn
       @conn ||= Faraday.new({ url: BASE_URL, params: { noko_token: NOKO_TOKEN } }) do |f|
@@ -25,6 +28,22 @@ module NokoCli
         end
         f.adapter @adapter, @stubs
       end
+    end
+
+    def current_user_entries
+      conn.get("current_user/entries").body
+    end
+
+    def headers
+      %w[date minutes description]
+    end
+
+    def rows
+      current_user_entries.map { |entry| row(entry) }
+    end
+
+    def row(entry)
+      [entry["date"], entry["minutes"], entry["description"]]
     end
   end
 end
