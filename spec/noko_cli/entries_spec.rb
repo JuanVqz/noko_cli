@@ -10,24 +10,22 @@ RSpec.describe NokoCli::Entries do
     end
     let(:entries) { described_class.new(adapter: :test, stubs: stubs) }
 
-    xit "returns an array of entries" do
-      expect(entries.list).to be_instance_of Array
+    it "includes headers" do
+      expect do
+        entries.list
+      end.to output(/date |minutes |description/).to_stdout
     end
 
-    xit "includes one entry" do
-      expect(entries.list.count).to eq 1
+    it "includes first entry info" do
+      expect do
+        entries.list
+      end.to output(/2022-07-03 |60 |#development implementing list functionality, installing faraday/).to_stdout
     end
-  end
 
-  def stub_response(fixture:, status: 200, headers: { "Content-Type" => "application/json" })
-    [status, headers, JSON.parse(File.read("spec/fixtures/#{fixture}.json"))]
-  end
-
-  def stub_request(path, response:, method: :get, body: {})
-    Faraday::Adapter::Test::Stubs.new do |stub|
-      arguments = [method, "/v2/#{path}"]
-      arguments << body.to_json if %i[post put patch].include?(method)
-      stub.send(*arguments) { |_env| response }
+    it "includes second entry info" do
+      expect do
+        entries.list
+      end.to output(/2022-07-05 |90 |Rendering the entry #development #testing/).to_stdout
     end
   end
 end
