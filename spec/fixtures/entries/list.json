@@ -1,0 +1,103 @@
+[
+  {
+    "id": 31712559,
+    "date": "2022-07-03",
+    "billable": true,
+    "minutes": 60,
+    "description": "#development implementing list functionality, installing faraday",
+    "created_at": "2022-07-03T20:55:05Z",
+    "updated_at": "2022-07-03T20:55:05Z",
+    "approved_at": "",
+    "source_url": "",
+    "user": {
+      "id": 80271,
+      "email": "juan@ombulabs.com",
+      "first_name": "Juan",
+      "last_name": "Vasquez",
+      "profile_image_url": "https://usercontent.nokoti.me/public_uploads/avatar/b4262edf3e3a5ff4aa80ccf58d455c8666f47df0/88f6c1eb3e4f94255deac05154922dfe.jpg",
+      "url": "https://api.nokotime.com/v2/users/80271"
+    },
+    "approved_by": "",
+    "tags": [
+      {
+        "id": 1443510,
+        "name": "development",
+        "billable": true,
+        "formatted_name": "#development",
+        "url": "https://api.nokotime.com/v2/tags/1443510"
+      }
+    ],
+    "project": {
+      "id": 657042,
+      "name": "noko_cli",
+      "billing_increment": 15,
+      "enabled": true,
+      "billable": true,
+      "color": "#55c9ef",
+      "url": "https://api.nokotime.com/v2/projects/657042"
+    },
+    "invoiced": "",
+    "invoiced_at": "",
+    "invoice": "",
+    "import": "",
+    "url": "https://api.nokotime.com/v2/entries/31712559",
+    "invoiced_outside_of_freckle_url": "https://api.nokotime.com/v2/entries/31712559/invoiced_outside_of_freckle",
+    "invoiced_outside_of_noko_url": "https://api.nokotime.com/v2/entries/31712559/marked_as_invoiced",
+    "approved_url": "https://api.nokotime.com/v2/entries/31712559/approved",
+    "unapproved_url": "https://api.nokotime.com/v2/entries/31712559/unapproved"
+  },
+  {
+    "id": 31728366,
+    "date": "2022-07-05",
+    "billable": true,
+    "minutes": 90,
+    "description": "Rendering the entry #development #testing",
+    "created_at": "2022-07-05T21:50:56Z",
+    "updated_at": "2022-07-05T21:57:39Z",
+    "approved_at": "",
+    "source_url": "",
+    "user": {
+      "id": 80271,
+      "email": "juan@ombulabs.com",
+      "first_name": "Juan",
+      "last_name": "Vasquez",
+      "profile_image_url": "https://usercontent.nokoti.me/public_uploads/avatar/b4262edf3e3a5ff4aa80ccf58d455c8666f47df0/88f6c1eb3e4f94255deac05154922dfe.jpg",
+      "url": "https://api.nokotime.com/v2/users/80271"
+    },
+    "approved_by": "",
+    "tags": [
+      {
+        "id": 1443510,
+        "name": "development",
+        "billable": true,
+        "formatted_name": "#development",
+        "url": "https://api.nokotime.com/v2/tags/1443510"
+      },
+      {
+        "id": 1443512,
+        "name": "testing",
+        "billable": true,
+        "formatted_name": "#testing",
+        "url": "https://api.nokotime.com/v2/tags/1443512"
+      }
+    ],
+    "project": {
+      "id": 657042,
+      "name": "noko_cli",
+      "billing_increment": 15,
+      "enabled": true,
+      "billable": true,
+      "color": "#55c9ef",
+      "url": "https://api.nokotime.com/v2/projects/657042"
+    },
+    "invoiced": "",
+    "invoiced_at": "",
+    "invoice": "",
+    "import": "",
+    "url": "https://api.nokotime.com/v2/entries/31728366",
+    "invoiced_outside_of_freckle_url": "https://api.nokotime.com/v2/entries/31728366/invoiced_outside_of_freckle",
+    "invoiced_outside_of_noko_url": "https://api.nokotime.com/v2/entries/31728366/marked_as_invoiced",
+    "approved_url": "https://api.nokotime.com/v2/entries/31728366/approved",
+    "unapproved_url": "https://api.nokotime.com/v2/entries/31728366/unapproved"
+  }
+]

@@ -11,5 +11,10 @@ require "noko_cli"
 # require "pry"
 # Pry.start
 
+# Examples
+
+# Entries
+# NokoCli::Entries.new.list
+
 require "irb"
 IRB.start(__FILE__)
