@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 
 jobs:
-  release-release:
+  release-please:
     runs-on: ubuntu-latest
     steps:
       - name: Update Release PR.
