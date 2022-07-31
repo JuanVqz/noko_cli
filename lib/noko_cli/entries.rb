@@ -35,7 +35,7 @@ module NokoCli
     end
 
     def headers
-      %w[date minutes description]
+      %w[date minutes project description]
     end
 
     def rows
@@ -43,7 +43,7 @@ module NokoCli
     end
 
     def row(entry)
-      [entry["date"], entry["minutes"], entry["description"]]
+      [entry["date"], entry["minutes"], entry["project"]["name"], entry["description"]]
     end
   end
 end
