@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.1](https://github.com/JuanVqz/noko_cli/compare/v0.2.0...v0.2.1) (2022-12-15)
+
+
+### Miscellaneous
+
+* **dependabot:** Add config file ([#37](https://github.com/JuanVqz/noko_cli/issues/37)) ([c3adae7](https://github.com/JuanVqz/noko_cli/commit/c3adae741fe7fe8647d5edbdcdb14fb67e921401))
+* **deps:** Bump rspec from 3.11.0 to 3.12.0 ([#42](https://github.com/JuanVqz/noko_cli/issues/42)) ([f890c90](https://github.com/JuanVqz/noko_cli/commit/f890c900f3ddc35039541ca68f2bbfacd199bff3))
+* **deps:** Bump rubocop from 1.31.1 to 1.40.0 ([#43](https://github.com/JuanVqz/noko_cli/issues/43)) ([3421931](https://github.com/JuanVqz/noko_cli/commit/342193153b5ec58ec8c2b63c3d1c4ee5fdebde07))
+* **deps:** Bump rubocop-performance from 1.14.2 to 1.15.1 ([#40](https://github.com/JuanVqz/noko_cli/issues/40)) ([f28155a](https://github.com/JuanVqz/noko_cli/commit/f28155af056bb92f429a091833f2e622db8ec4c8))
+* **deps:** Update faraday requirement from ~&gt; 2.3.0 to >= 2.3, &lt; 2.8 ([#41](https://github.com/JuanVqz/noko_cli/issues/41)) ([61718be](https://github.com/JuanVqz/noko_cli/commit/61718bed9f61074c51c5d43d6476efc9358abb1e))
+
 ## [0.2.0](https://github.com/JuanVqz/noko_cli/compare/v0.1.2...v0.2.0) (2022-07-31)
 
 
