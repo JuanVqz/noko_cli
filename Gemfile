@@ -10,4 +10,4 @@ gem "rspec", "~> 3.12"
 gem "rubocop", "~> 1.43.0", require: false
 gem "rubocop-performance", "~> 1.15.2", require: false
 gem "rubocop-rake", "~> 0.6.0", require: false
-gem "rubocop-rspec", "~> 2.16.0", require: false
+gem "rubocop-rspec", "~> 2.17.0", require: false
