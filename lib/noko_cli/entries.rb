@@ -1,16 +1,14 @@
 # frozen_string_literal: true
 
-require "faraday"
 require "tty-table"
 
 module NokoCli
   # This is an entry resource, which could be listed
   class Entries
+    attr_reader :conn
+
     def initialize(config:)
-      @token = config.token
-      @url = config.url
-      @adapter = config.adapter
-      @stubs = config.stubs
+      @conn = config.conn
     end
 
     def list
@@ -18,16 +16,6 @@ module NokoCli
     end
 
     private
-
-    def conn
-      @conn ||= Faraday.new({ url: @url, params: { noko_token: @token } }) do |f|
-        unless @stubs
-          f.request :json
-          f.response :json, content_type: "application/json"
-        end
-        f.adapter @adapter, @stubs
-      end
-    end
 
     def current_user_entries
       conn.get("current_user/entries").body
