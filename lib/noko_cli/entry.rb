@@ -4,7 +4,7 @@ require "tty-table"
 
 module NokoCli
   # This is an entry resource, which could be listed
-  class Entries
+  class Entry
     attr_reader :conn
 
     def initialize(config:)
