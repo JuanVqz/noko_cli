@@ -8,14 +8,19 @@ on:
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    env:
+      GEM_NAME: "noko_cli"
+    strategy:
+      matrix:
+        ruby: [2.7]
     steps:
       - name: Update Release PR.
         uses: google-github-actions/release-please-action@v3
         id: release
         with:
           release-type: ruby
-          package-name: noko_cli
-          version-file: "lib/noko_cli/version.rb"
+          package-name: ${{ env.GEM_NAME }}
+          version-file: "lib/${{ env.GEM_NAME }}/version.rb"
           changelog-types: '[{"type":"feat","section":"Features","hidden":false}, {"type":"fix","section":"Bug Fixes","hidden":false}, {"type":"chore", "section":"Miscellaneous","hidden":false}]'
       - name: Checkout
         uses: actions/checkout@v3
@@ -23,6 +28,7 @@ jobs:
       - name: Set Up Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ${{ matrix.ruby }}
           bundle-cache: true
         if: ${{ steps.release.outputs.release_created }}
       - name: Bundle Install
