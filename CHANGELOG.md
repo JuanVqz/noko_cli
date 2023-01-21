@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/JuanVqz/noko_cli/compare/v0.2.3...v0.2.4) (2023-01-21)
+
+
+### Miscellaneous
+
+* **readme:** Add disclaimer section ([#64](https://github.com/JuanVqz/noko_cli/issues/64)) ([90339cc](https://github.com/JuanVqz/noko_cli/commit/90339cc5814eaf7f078fb298e866b666269348e6))
+
 ## [0.2.3](https://github.com/JuanVqz/noko_cli/compare/v0.2.1...v0.2.3) (2023-01-21)
 
 
