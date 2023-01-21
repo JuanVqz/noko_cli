@@ -8,6 +8,9 @@ on:
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby: [2.6.3, 2.7]
     steps:
       - name: Update Release PR.
         uses: google-github-actions/release-please-action@v3
@@ -23,6 +26,7 @@ jobs:
       - name: Set Up Ruby
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: ${{ matrix.ruby }}
           bundle-cache: true
         if: ${{ steps.release.outputs.release_created }}
       - name: Bundle Install
