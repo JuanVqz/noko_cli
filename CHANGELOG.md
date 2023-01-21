@@ -14,6 +14,22 @@
 * **deps:** Bump rubocop-rspec from 2.16.0 to 2.17.0 ([#53](https://github.com/JuanVqz/noko_cli/issues/53)) ([c42f698](https://github.com/JuanVqz/noko_cli/commit/c42f698710be410972db5833f842603506eaa5c8))
 * **deps:** Bump rubocop-rspec from 2.17.0 to 2.18.1 ([#56](https://github.com/JuanVqz/noko_cli/issues/56)) ([6993c73](https://github.com/JuanVqz/noko_cli/commit/6993c73072efb7b8cb372e60d16613cc77cf019d))
 * **deps:** Remove ruby-version file ([#50](https://github.com/JuanVqz/noko_cli/issues/50)) ([3acfb42](https://github.com/JuanVqz/noko_cli/commit/3acfb4248491bab88e2762ef2c135ee5d15af356))
+* **main:** release 0.2.2 ([#49](https://github.com/JuanVqz/noko_cli/issues/49)) ([e599cfa](https://github.com/JuanVqz/noko_cli/commit/e599cfa2c4adb21bf4257dd4a1d3369f81df487c))
+
+## [0.2.2](https://github.com/JuanVqz/noko_cli/compare/v0.2.1...v0.2.2) (2023-01-21)
+
+
+### Miscellaneous
+
+* **deps-dev:** Bump pry from 0.14.1 to 0.14.2 ([#51](https://github.com/JuanVqz/noko_cli/issues/51)) ([6719a50](https://github.com/JuanVqz/noko_cli/commit/6719a506216399655c6545ded1e8306bf0710fc9))
+* **deps:** Bump faraday from 2.7.2 to 2.7.3 ([#55](https://github.com/JuanVqz/noko_cli/issues/55)) ([493d1b7](https://github.com/JuanVqz/noko_cli/commit/493d1b705a15aff29d5619e1b92ff2f7cfa9c1c1))
+* **deps:** Bump rubocop from 1.40.0 to 1.42.0 ([#48](https://github.com/JuanVqz/noko_cli/issues/48)) ([88b5cbc](https://github.com/JuanVqz/noko_cli/commit/88b5cbcaa8b6cdc2cf6d71198a1fc94458dcdf40))
+* **deps:** Bump rubocop from 1.42.0 to 1.43.0 ([#52](https://github.com/JuanVqz/noko_cli/issues/52)) ([b9694cd](https://github.com/JuanVqz/noko_cli/commit/b9694cdd3dffa8d4e8b818954c860d18e119a8b9))
+* **deps:** Bump rubocop-performance from 1.15.1 to 1.15.2 ([#47](https://github.com/JuanVqz/noko_cli/issues/47)) ([91c5528](https://github.com/JuanVqz/noko_cli/commit/91c5528607987afafaafd30787a462cd24f7a31b))
+* **deps:** Bump rubocop-rspec from 2.12.1 to 2.16.0 ([#44](https://github.com/JuanVqz/noko_cli/issues/44)) ([bcbf04a](https://github.com/JuanVqz/noko_cli/commit/bcbf04aea29433c4bc1efde98405188765ce24b9))
+* **deps:** Bump rubocop-rspec from 2.16.0 to 2.17.0 ([#53](https://github.com/JuanVqz/noko_cli/issues/53)) ([c42f698](https://github.com/JuanVqz/noko_cli/commit/c42f698710be410972db5833f842603506eaa5c8))
+* **deps:** Bump rubocop-rspec from 2.17.0 to 2.18.1 ([#56](https://github.com/JuanVqz/noko_cli/issues/56)) ([6993c73](https://github.com/JuanVqz/noko_cli/commit/6993c73072efb7b8cb372e60d16613cc77cf019d))
+* **deps:** Remove ruby-version file ([#50](https://github.com/JuanVqz/noko_cli/issues/50)) ([3acfb42](https://github.com/JuanVqz/noko_cli/commit/3acfb4248491bab88e2762ef2c135ee5d15af356))
 
 ## [0.2.1](https://github.com/JuanVqz/noko_cli/compare/v0.2.0...v0.2.1) (2022-12-15)
 
