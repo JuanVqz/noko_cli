@@ -8,7 +8,8 @@ RSpec.describe NokoCli::Entries do
     let(:stubs) do
       stub_request("current_user/entries", response: stub_response(fixture: "entries/list"))
     end
-    let(:entries) { described_class.new(adapter: :test, stubs: stubs) }
+    let(:config) { NokoCli::Config.new(adapter: :test, stubs: stubs) }
+    let(:entries) { described_class.new(config: config) }
 
     it "includes headers" do
       headers = /date |minutes |project |description/

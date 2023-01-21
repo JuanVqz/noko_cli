@@ -6,12 +6,11 @@ require "tty-table"
 module NokoCli
   # This is an entry resource, which could be listed
   class Entries
-    BASE_URL = "https://api.nokotime.com/v2"
-    NOKO_TOKEN = ENV.fetch("NOKO_TOKEN", nil)
-
-    def initialize(adapter: Faraday.default_adapter, stubs: nil)
-      @adapter = adapter
-      @stubs = stubs
+    def initialize(config:)
+      @token = config.token
+      @url = config.url
+      @adapter = config.adapter
+      @stubs = config.stubs
     end
 
     def list
@@ -21,7 +20,7 @@ module NokoCli
     private
 
     def conn
-      @conn ||= Faraday.new({ url: BASE_URL, params: { noko_token: NOKO_TOKEN } }) do |f|
+      @conn ||= Faraday.new({ url: @url, params: { noko_token: @token } }) do |f|
         unless @stubs
           f.request :json
           f.response :json, content_type: "application/json"
