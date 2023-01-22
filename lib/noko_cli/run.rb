@@ -2,9 +2,14 @@
 
 module NokoCli
   class Run # :nodoc:
+    attr_reader :config
+
+    def initialize
+      @config = Config.new
+    end
+
     def self.call
-      @config ||= Config.new
-      Entry.new(config: @config).list
+      Entry.new(config.conn).list
     end
   end
 end
