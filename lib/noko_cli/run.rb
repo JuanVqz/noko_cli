@@ -4,6 +4,7 @@ module NokoCli
   class Run # :nodoc:
     def initialize
       @config = Config.new
+      @projects = Project.new(@config.conn).list
       @tags = Tag.new(@config.conn).list
     end
 
