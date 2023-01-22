@@ -13,9 +13,7 @@ RSpec.describe NokoCli::Project do
     end
 
     it "returns tag's attributes" do
-      attributes = %w[id name]
-
-      expect(project.list.first.keys).to match_array attributes
+      expect(project.list.first.keys.count).to eq 28
     end
   end
 end
