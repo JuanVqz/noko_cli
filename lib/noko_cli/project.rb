@@ -7,7 +7,7 @@ module NokoCli
     end
 
     def list
-      @conn.get("projects").body
+      @conn.get("projects").body.map { |p| p["name"] }
     end
   end
 end
