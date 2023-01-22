@@ -5,6 +5,9 @@ RSpec.describe NokoCli::Tag do
     let(:stubs) do
       stub_request("tags", response: stub_response(fixture: "tags/list"))
     end
+    let(:tag_attributes) do
+      %w[id name billable formatted_name import entries entries_url url created_at updated_at merge_url]
+    end
     let(:config) { NokoCli::Config.new(adapter: :test, stubs:) }
     let(:tag) { described_class.new(config.conn) }
 
@@ -13,9 +16,7 @@ RSpec.describe NokoCli::Tag do
     end
 
     it "returns tag's attributes" do
-      attributes = %w[id name]
-
-      expect(tag.list.first.keys).to match_array attributes
+      expect(tag.list.first.keys).to match_array tag_attributes
     end
   end
 end
