@@ -5,8 +5,6 @@ require "tty-table"
 module NokoCli
   # This is an entry resource, which could be listed
   class Entry
-    attr_reader :conn
-
     def initialize(conn)
       @conn = conn
     end
@@ -18,7 +16,7 @@ module NokoCli
     private
 
     def current_user_entries
-      conn.get("current_user/entries").body
+      @conn.get("current_user/entries").body
     end
 
     def headers
