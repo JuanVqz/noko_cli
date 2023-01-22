@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe NokoCli::Tag do
+  it "is a skipped example"
   describe "#list" do
     let(:stubs) do
       stub_request("tags", response: stub_response(fixture: "tags/list"))
