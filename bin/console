@@ -13,8 +13,10 @@ require "noko_cli"
 
 # Examples
 
-# Entries
-# NokoCli::Entries.new.list
+# config   = NokoCli::Config.new
+# projects = NokoCli::Project.new(config.conn)
+# tags     = NokoCli::Tag.new(config.conn)
+# entries  = NokoCli::Entry.new(config.conn)
 
 require "irb"
 IRB.start(__FILE__)
