@@ -7,8 +7,8 @@ module NokoCli
   class Entry
     attr_reader :conn
 
-    def initialize(config:)
-      @conn = config.conn
+    def initialize(conn)
+      @conn = conn
     end
 
     def list
