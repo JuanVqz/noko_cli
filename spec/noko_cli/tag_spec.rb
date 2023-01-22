@@ -5,7 +5,7 @@ RSpec.describe NokoCli::Tag do
     let(:stubs) do
       stub_request("tags", response: stub_response(fixture: "tags/list"))
     end
-    let(:config) { NokoCli::Config.new(adapter: :test, stubs: stubs) }
+    let(:config) { NokoCli::Config.new(adapter: :test, stubs:) }
     let(:tag) { described_class.new(config.conn) }
 
     it "returns an array" do
