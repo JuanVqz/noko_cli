@@ -7,7 +7,7 @@ module NokoCli
     end
 
     def list
-      @conn.get("tags").body
+      @conn.get("tags").body.map { |tag| tag["name"] }
     end
   end
 end

@@ -12,8 +12,8 @@ RSpec.describe NokoCli::Project do
       expect(project.list).to be_an_instance_of(Array)
     end
 
-    it "returns tag's attributes" do
-      expect(project.list.first.keys.count).to eq 28
+    it "returns tag's name" do
+      expect(project.list).to match_array %w[Internal Learning]
     end
   end
 end
