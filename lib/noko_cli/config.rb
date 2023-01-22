@@ -4,18 +4,22 @@ require "faraday"
 
 module NokoCli
   class Config # :nodoc:
-    attr_reader :adapter, :stubs, :token, :url
+    attr_reader :adapter, :stubs, :noko_token, :url
 
-    def initialize(adapter: Faraday.default_adapter, stubs: nil, token: ENV.fetch("NOKO_TOKEN", nil))
+    def initialize(
+      adapter: Faraday.default_adapter,
+      stubs: nil,
+      noko_token: ENV.fetch("NOKO_TOKEN", nil)
+    )
       @adapter = adapter
       @stubs = stubs
-      @token = token
+      @noko_token = noko_token
       @url = "https://api.nokotime.com/v2"
     end
 
     def conn
       @conn ||=
-        Faraday.new({ url: url, params: { noko_token: token } }) do |f|
+        Faraday.new({ url:, params: { noko_token: } }) do |f|
           unless stubs
             f.request :json
             f.response :json, content_type: "application/json"

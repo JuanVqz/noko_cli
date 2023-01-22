@@ -5,7 +5,7 @@ RSpec.describe NokoCli::Project do
     let(:stubs) do
       stub_request("projects", response: stub_response(fixture: "projects/list"))
     end
-    let(:config) { NokoCli::Config.new(adapter: :test, stubs: stubs) }
+    let(:config) { NokoCli::Config.new(adapter: :test, stubs:) }
     let(:project) { described_class.new(config.conn) }
 
     it "returns an array" do
