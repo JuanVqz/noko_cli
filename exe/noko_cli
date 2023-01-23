@@ -3,4 +3,4 @@
 
 require "noko_cli"
 
-NokoCli::Run.call(ARGV)
+NokoCli::Run.new(ARGV).call

@@ -3,13 +3,13 @@
 require "faraday"
 require "json"
 
-RSpec.describe NokoCli::Entry do
+RSpec.describe NokoCli::Api::Entry do
   describe "#list" do
     let(:stubs) do
       stub_request("current_user/entries", response: stub_response(fixture: "entries/list"))
     end
     let(:config) { NokoCli::Config.new(adapter: :test, stubs:) }
-    let(:entry) { described_class.new(config.conn) }
+    let(:entry) { described_class.new(config) }
 
     it "includes headers" do
       headers = /date |minutes |project |description/
