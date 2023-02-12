@@ -15,12 +15,15 @@ require "noko_cli"
 
 # App
 # config = NokoCli::Config.new
-# run = NokoCli::Run.new(["add"]).call
+# run = NokoCli::Run.call(["add"])
 
-# Api
-# projects = NokoCli::Api::Project.new
-# tags = NokoCli::Api::Tag.new
-# entries = NokoCli::Api::Entry.new
+# Get data from noko's API
+# projects = NokoCli::Project.new
+# projects.list
+# tags = NokoCli::Tag.new
+# tags.list
+# entries = NokoCli::Entry.new
+# entries.list
 
 require "irb"
 IRB.start(__FILE__)

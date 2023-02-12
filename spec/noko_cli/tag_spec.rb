@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe NokoCli::Api::Tag do
+RSpec.describe NokoCli::Tag do
   describe "#list" do
     let(:stubs) do
       stub_request("tags", response: stub_response(fixture: "tags/list"))
@@ -13,7 +13,7 @@ RSpec.describe NokoCli::Api::Tag do
     end
 
     it "returns tag's name" do
-      expect(tag.list).to match_array %w[sales unbillable]
+      expect(tag.list).to match_array %w[#sales* #unbillable*]
     end
   end
 end

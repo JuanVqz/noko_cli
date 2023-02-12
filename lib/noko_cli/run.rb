@@ -2,6 +2,10 @@
 
 module NokoCli
   class Run # :nodoc:
+    def self.call(options)
+      new(options).call
+    end
+
     def initialize(options)
       @options = options
     end
@@ -9,22 +13,15 @@ module NokoCli
     def call
       return create_entry if add?
 
-      Api::Entry.new.list
+      Entry.new.list
     end
 
     private
 
     def create_entry
-      require "tty-prompt"
-      prompt = TTY::Prompt.new
-      result = prompt.collect do
-        projects = Api::Project.new.list
-        tags = Api::Tag.new.list
-        key(:time).ask("Time in seconds?", convert: :int)
-        key(:project).select("Select a project", projects, required: true)
-        key(:tags).multi_select("Select some tags?", tags)
-      end
-      puts result
+      require "json"
+      result = Form.new.call
+      puts JSON.pretty_generate(result)
     end
 
     def add?

@@ -3,7 +3,7 @@
 require "faraday"
 require "json"
 
-RSpec.describe NokoCli::Api::Entry do
+RSpec.describe NokoCli::Entry do
   describe "#list" do
     let(:stubs) do
       stub_request("current_user/entries", response: stub_response(fixture: "entries/list"))

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe NokoCli::Api::Project do
+RSpec.describe NokoCli::Project do
   describe "#list" do
     let(:stubs) do
       stub_request("projects", response: stub_response(fixture: "projects/list"))
