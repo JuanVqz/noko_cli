@@ -3,7 +3,7 @@ name: Tests
 on:
   push:
     branches:
-      - master
+      - main
 
   pull_request:
 
@@ -13,7 +13,10 @@ jobs:
     name: Ruby ${{ matrix.ruby }}
     strategy:
       matrix:
-        ruby: [2.6.6, 3.0.0]
+        ruby:
+          - 2.6.6
+          - 3.0.0
+          - 3.2.5
     steps:
     - uses: actions/checkout@v3
     - name: Set up Ruby
