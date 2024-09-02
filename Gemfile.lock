@@ -3,6 +3,7 @@ PATH
   specs:
     noko_cli (0.2.4)
       faraday (>= 2.3, < 2.12)
+      tty-prompt (~> 0.23)
       tty-table (~> 0.12.0)
       zeitwerk (~> 2.6)
 
@@ -79,6 +80,14 @@ GEM
     strings-ansi (0.2.0)
     strscan (3.1.0)
     tty-color (0.6.0)
+    tty-cursor (0.7.1)
+    tty-prompt (0.23.1)
+      pastel (~> 0.8)
+      tty-reader (~> 0.8)
+    tty-reader (0.9.0)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.8)
+      wisper (~> 2.0)
     tty-screen (0.8.1)
     tty-table (0.12.0)
       pastel (~> 0.8)
@@ -86,6 +95,7 @@ GEM
       tty-screen (~> 0.8)
     unicode-display_width (2.5.0)
     unicode_utils (1.4.0)
+    wisper (2.0.1)
     zeitwerk (2.6.17)
 
 PLATFORMS
@@ -103,4 +113,4 @@ DEPENDENCIES
   rubocop-rspec (~> 2.20.0)
 
 BUNDLED WITH
-   2.3.26
+   2.4.4

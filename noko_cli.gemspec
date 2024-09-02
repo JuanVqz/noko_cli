@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   DESC
   spec.homepage = "https://github.com/juanvqz/noko_cli"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 3.1"
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
@@ -33,6 +33,7 @@ Gem::Specification.new do |spec|
   spec.metadata = { "rubygems_mfa_required" => "true" }
 
   spec.add_dependency "faraday", ">= 2.3", "< 2.12"
+  spec.add_dependency "tty-prompt", "~> 0.23"
   spec.add_dependency "tty-table", "~> 0.12.0"
   spec.add_dependency "zeitwerk", "~> 2.6"
 
