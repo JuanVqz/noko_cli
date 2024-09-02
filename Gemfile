@@ -5,7 +5,7 @@ source "https://rubygems.org"
 # Specify your gem's dependencies in noko_cli.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
+gem "rake", "~> 13.2"
 gem "rspec", "~> 3.13"
 gem "rubocop", "~> 1.50.2", require: false
 gem "rubocop-performance", "~> 1.17.1", require: false
