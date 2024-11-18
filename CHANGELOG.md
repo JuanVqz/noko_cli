@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.5](https://github.com/JuanVqz/noko_cli/compare/v0.2.4...v0.2.5) (2024-11-18)
+
+
+### Miscellaneous
+
+* **ci:** Update workflows ([#85](https://github.com/JuanVqz/noko_cli/issues/85)) ([bc77e1f](https://github.com/JuanVqz/noko_cli/commit/bc77e1f810b11b3026aa0becad2d9ba054ac9968))
+* **deps-dev:** Update pry requirement from ~&gt; 0.14.1 to ~> 0.15.0 ([#91](https://github.com/JuanVqz/noko_cli/issues/91)) ([221579e](https://github.com/JuanVqz/noko_cli/commit/221579e328a66c01be47f71376ecb18879412073))
+* **deps:** Bump rake from 13.0.6 to 13.2.1 ([#88](https://github.com/JuanVqz/noko_cli/issues/88)) ([0b59183](https://github.com/JuanVqz/noko_cli/commit/0b59183f9de96e25bbd0cb8e0827661337bddd43))
+* **deps:** Bump rexml from 3.3.6 to 3.3.9 ([#90](https://github.com/JuanVqz/noko_cli/issues/90)) ([6332b6f](https://github.com/JuanVqz/noko_cli/commit/6332b6f0d467ffdee382c8c63b24e9ce60a75817))
+* **deps:** Bump rspec from 3.12.0 to 3.13.0 ([#87](https://github.com/JuanVqz/noko_cli/issues/87)) ([34715f6](https://github.com/JuanVqz/noko_cli/commit/34715f64d98bb2c30dfcd9b02555583b7c8a82eb))
+* **deps:** Bump zeitwerk from 2.6.17 to 2.6.18 ([#89](https://github.com/JuanVqz/noko_cli/issues/89)) ([2c595d9](https://github.com/JuanVqz/noko_cli/commit/2c595d9caa215be823fad92eea786af1a0536341))
+
 ## [0.2.4](https://github.com/JuanVqz/noko_cli/compare/v0.2.3...v0.2.4) (2024-09-01)
 
 
