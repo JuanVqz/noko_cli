@@ -19,14 +19,14 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
     json (2.7.2)
-    method_source (1.0.0)
+    method_source (1.1.0)
     parallel (1.24.0)
     parser (3.3.4.2)
       ast (~> 2.4.1)
       racc
     pastel (0.8.0)
       tty-color (~> 0.5)
-    pry (0.14.2)
+    pry (0.15.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
     racc (1.8.1)
@@ -94,7 +94,7 @@ PLATFORMS
 
 DEPENDENCIES
   noko_cli!
-  pry (~> 0.14.1)
+  pry (~> 0.15.0)
   rake (~> 13.2)
   rspec (~> 3.13)
   rubocop (~> 1.50.2)
