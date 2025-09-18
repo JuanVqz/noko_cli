@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.6](https://github.com/JuanVqz/noko_cli/compare/v0.2.5...v0.2.6) (2025-09-18)
+
+
+### Miscellaneous
+
+* **deps-dev:** Bump pry from 0.15.0 to 0.15.2 ([#95](https://github.com/JuanVqz/noko_cli/issues/95)) ([53ca8b7](https://github.com/JuanVqz/noko_cli/commit/53ca8b79ff8275cc6fe564e7622155d1a9a3c715))
+
 ## [0.2.5](https://github.com/JuanVqz/noko_cli/compare/v0.2.4...v0.2.5) (2024-11-18)
 
 
